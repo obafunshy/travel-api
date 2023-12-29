@@ -12,13 +12,14 @@ use Illuminate\Auth\AuthenticationException;
 class TravelController extends Controller
 {
     public function store(TravelRequest $request) {
-        Log::info('Attempting to store travel data.');
-        if (!auth()->check()) {
-            Log::info('User is not authenticated.');
-            throw new AuthenticationException('Unauthenticated.');
-        }
 
         $travel = Travel::create($request->validated());
+        return new TravelResource($travel);
+    }
+
+    public function update(Travel $travel, TravelRequest $request) {
+        $travel->update($request->validated());
+
         return new TravelResource($travel);
     }
 }
