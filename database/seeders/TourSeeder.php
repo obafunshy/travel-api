@@ -5,7 +5,6 @@ namespace Database\Seeders;
 use App\Models\Tour;
 use App\Models\Travel;
 use Illuminate\Database\Seeder;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class TourSeeder extends Seeder
 {

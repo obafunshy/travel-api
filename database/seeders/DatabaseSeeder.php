@@ -3,10 +3,7 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
-use App\Models\Tour;
-use App\Models\Travel;
 use Illuminate\Database\Seeder;
-use Database\Seeders\TourSeeder;
 
 class DatabaseSeeder extends Seeder
 {

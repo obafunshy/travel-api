@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class TourFactory extends Factory
 {
     protected $model = Tour::class;
+
     /**
      * Define the model's default state.
      *
@@ -20,8 +21,8 @@ class TourFactory extends Factory
     {
         return [
             'name' => $this->faker->text(20),
-            'starting_date'=> now(),
-            'ending_date'=> now()->addDays(rand(1,10)),
+            'starting_date' => now(),
+            'ending_date' => now()->addDays(rand(1, 10)),
             'price' => $this->faker->randomFloat(2, 10, 999),
         ];
     }

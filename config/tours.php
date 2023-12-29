@@ -3,5 +3,5 @@
 return [
     'paginationPerPage' => [
         'tours' => 15,
-    ]
+    ],
 ];
